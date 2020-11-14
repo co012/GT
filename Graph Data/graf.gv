@@ -1,0 +1,14 @@
+graph {
+
+    n1[label="X"]
+    n2[label="a"]
+    n3[label="d"]
+    n4[label="c"]
+    n5[label="b"]
+
+    n1 -- n2
+    n1 -- n3
+    n1 -- n4
+    n1 -- n5
+
+}

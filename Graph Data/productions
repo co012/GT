@@ -1,0 +1,85 @@
+ProductionCount: 4
+Production:{
+    P1{
+        Left: X
+        Right: {
+            graph{
+                n1[label="Y"]
+                n2[label="a"]
+                n3[label="c"]
+
+                n1 -- n2
+                n1 -- n3
+            }
+        }
+        TO {
+           a:Y
+           b:c
+           c:Y
+           d:a
+           X:c
+           Y:Y
+        }
+    }
+
+    P2{
+        Left: X
+        Right: {
+            graph{
+                n1[label="X"]
+                n2[label="a"]
+                n3[label="b"]
+
+                n1 -- n2
+                n1 -- n3
+            }
+        }
+        TO {
+           a:b
+           b:X
+           c:d
+           d:X
+           X:b
+           Y:X
+        }
+    }
+
+    P3{
+        Left: Y
+        Right: {
+            graph{
+                n1[label="Y"]
+                n2[label="X"]
+
+                n1 -- n2
+            }
+        }
+        TO {
+           a:X
+           b:Y
+           c:X
+           d:Y
+           X:X
+           Y:Y
+        }
+    }
+
+    P3{
+        Left: Y
+        Right: {
+            graph{
+                n1[label="c"]
+
+                n1
+            }
+        }
+        TO {
+           a:X
+           b:Y
+           c:X
+           d:Y
+           X:X
+           Y:Y
+        }
+    }
+}
